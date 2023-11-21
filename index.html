@@ -3,14 +3,23 @@
     <head>
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width">
-        <link href="styles.css">
+        <link rel="stylesheet" href="styles.css">
         <title>Page</title>
+
+        <script src="javascript/buttonsync.js"></script>
+
     </head>
     <body>
-        <h2 rel>The classic 2.</h2>
-        <hr>
-        <p>The classic THREE.</p>
         <img src="images/donotperish.png" alt="do not perish">
+        <br>
+        <div class="center" style="display: none;" id="centerpiece">
+            <button type="button" onclick="onButtonClick()">Click this button</button>
+            <br>
+            <b id="counter" style="text-align: center;"></b>
+        </div>
+
+        <button class="bottom_marginoffset" style="width: fit-content;" onclick="onDisplayButtonClick()">Reveal</button>
+
     </body>
 
 </html>
